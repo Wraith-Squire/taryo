@@ -10,7 +10,7 @@
 2. Build the docker image
 
     ````sh
-    docker build --tag 'template' . --no-cache --force-rm
+    docker build --tag 'template' . --no-cache --force-rm --build-arg ENVIRONMENT="local"
 
 3. Run the docker image
 
