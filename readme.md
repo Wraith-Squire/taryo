@@ -15,4 +15,4 @@
 3. Run the docker image
 
     ````sh
-    docker run -p 3000:80 'template'
+    docker run -d -it --name template --mount type=bind,source="${pwd}",target=/var/www/html -p 3000:80 'template'
