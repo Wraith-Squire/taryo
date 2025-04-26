@@ -8,7 +8,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import type {Color, Size} from '@/Types/index'
+import type {Color, Size} from '@/types/index'
 import { onMounted } from 'vue';
 
 defineOptions({

@@ -4,7 +4,7 @@
     </button>
 </template>
 <script setup lang="ts">
-import type {Color, Size} from '@/Types/index'
+import type {Color, Size} from '@/types/index'
 
 defineOptions({
     inheritAttrs: false
