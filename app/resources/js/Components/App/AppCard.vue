@@ -1,5 +1,5 @@
 <template>
-    <fieldset class="app-card" :class="$attrs['class']">
+    <fieldset :class="$attrs['class'] + ' app-card'">
         <legend class="app-card-label" v-if="props.label">{{ props.label }}</legend>
         <slot></slot>
     </fieldset>
