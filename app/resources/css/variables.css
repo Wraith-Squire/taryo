@@ -3,7 +3,7 @@
     --secondary: 95, 93, 156;
     --tertiary: 164, 206, 149;
 
-    --default: 0, 0, 0;
+    --default: var(--primary);
     --success: 116, 226, 145;
     --danger: 255, 128, 128;
     --warning: 255, 164, 71;

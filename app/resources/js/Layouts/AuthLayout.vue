@@ -9,9 +9,7 @@
                     <slot/>
                 </div>
             </div>
-            <div class="auth-layout__side-nav">
-                <MenuRightSide/>
-            </div>
+            <MenuRightSide/>
         </div>
     </div>
 </template>
@@ -41,8 +39,5 @@ import MenuRightSide from '../Components/Menu/MenuRightSide.vue';
     display: flex;
     flex-direction: row;
     overflow: hidden;
-}
-
-.auth-layout__side-nav {
 }
 </style>
