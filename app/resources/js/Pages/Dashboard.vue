@@ -1,24 +1,27 @@
 <script setup lang="ts">
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import AuthLayout from '@/Layouts/AuthLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import StoreList from '@/Components/Store/StoreList.vue';
+import RecentStoreList from '@/Components/Store/RecentStoreList.vue';
+import AllStoreList from '@/Components/Store/AllStoreList.vue';
 
 </script>
 
 <template>
-    <Head title="Dashboard" />
-
-    <AuthenticatedLayout>
-        <template #header>
-            <h2 class="text-xl font-semibold leading-tight text-gray-800">Stores</h2>
-        </template>
-
-        <div class="h-full py-4">
-            <div class="h-full mx-auto max-w-7xl">
-                <div class="overflow-hidden bg-white shadow-sm h-svh sm:rounded-lg">
-                    <StoreList/>
+    <AuthLayout>
+        <div class="mx-auto max-w-7xl">
+            <div>
+                <h4 class="font-semibold">Recent Stores</h4>
+                <div>
+                    <RecentStoreList/>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold">All Stores</h4>
+                <div>
+                    <AllStoreList/>
                 </div>
             </div>
         </div>
-    </AuthenticatedLayout>
+    </AuthLayout>
 </template>
