@@ -6,7 +6,7 @@
         </StoreCard>
         <StoreCard v-for="store in stores" :store-name="store" />
         <AppSlidingModal v-model:is-open="isStoreFormOpen">
-            Test
+            <StoreForm/>
         </AppSlidingModal>
     </div>
 </template>
@@ -14,6 +14,7 @@
 import StoreCard from '@/Components/Store/StoreCard.vue';
 import AppSlidingModal from '../App/AppSlidingModal.vue';
 import { ref } from 'vue';
+import StoreForm from './StoreForm.vue';
 
 const isStoreFormOpen = ref<boolean>(true);
 const stores = ['test', 'test2', 'test3'];

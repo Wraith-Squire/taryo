@@ -52,7 +52,7 @@ watchEffect(() => {
 .app-sliding-modal__content {
     background-color: white;
     height: inherit;
-    width: 80rem;
+    min-width: 40rem;
     z-index: 4;
     padding: 1rem;
     padding-right: 4rem;
