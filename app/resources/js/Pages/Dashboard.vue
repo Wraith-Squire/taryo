@@ -4,13 +4,13 @@
             <div>
                 <h4 class="font-semibold">Recent Stores</h4>
                 <div>
-                    <RecentStoreList/>
+                    <RecentStoreList :recent-stores="props.recentStores"/>
                 </div>
             </div>
             <div>
                 <h4 class="font-semibold">All Stores</h4>
                 <div>
-                    <AllStoreList/>
+                    <AllStoreList :all-stores="props.allStores"/>
                 </div>
             </div>
 
@@ -21,4 +21,9 @@
 import AuthLayout from '@/Layouts/AuthLayout.vue';
 import RecentStoreList from '@/Components/Store/RecentStoreList.vue';
 import AllStoreList from '@/Components/Store/AllStoreList.vue';
+import { Store } from '@/types/store';
+const props = defineProps<{
+    recentStores: Store[]
+    allStores: Store[],
+}>();
 </script>

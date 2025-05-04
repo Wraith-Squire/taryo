@@ -15,7 +15,7 @@
 import { onMounted, ref, watchEffect } from 'vue';
 
 const isOpen = defineModel('isOpen');
-const isVisible = ref<boolean>(true);
+const isVisible = ref<boolean>(false);
 const setIsOpen = (value: boolean) => isOpen.value = value;
 
 onanimationend = (event) => {
