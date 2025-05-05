@@ -67,6 +67,7 @@ watchEffect(() => {
 }
 
 .app-sliding-modal__content-body {
+    padding-top: 4rem;
     height: 100%;
     width: 100%;
 }

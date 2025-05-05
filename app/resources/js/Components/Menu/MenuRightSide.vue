@@ -18,7 +18,8 @@ import AppTooltip from '../App/AppTooltip.vue';
 </script>
 <style scoped>
 .menu-right-side {
-    position: absolute;
+    /* position: absolute; */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: start;

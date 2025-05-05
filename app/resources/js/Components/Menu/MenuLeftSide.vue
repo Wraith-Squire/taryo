@@ -23,7 +23,6 @@ import ApplicationLogo from '../ApplicationLogo.vue';
 </script>
 <style scoped>
 .menu-left-side {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -32,10 +31,11 @@ import ApplicationLogo from '../ApplicationLogo.vue';
     background-color: white;
     gap: 1rem;
     padding: 1rem;
-    z-index: 8;
+    z-index: 3;
     border-left: 1px solid rgba(var(--secondary), 0.2);
     left: 0;
     width: 16rem;
+    overflow: hidden;
 }
 
 a {

@@ -9,6 +9,7 @@ use App\Http\Controllers\Auth\PasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Http\Controllers\SaleController;
 use App\Http\Controllers\StoreController;
 use Illuminate\Support\Facades\Route;
 
@@ -62,4 +63,6 @@ Route::middleware('auth')->group(function () {
 
     Route::post('store/create', [StoreController::class, 'create'])
                 ->name('store.create');
+
+    Route::get('store/sales', [SaleController::class, 'index'])->name('sales');
 });
